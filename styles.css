@@ -1,158 +1,172 @@
-@font-face{
-font-family:"volcadisplaybass";
-src:url(volcadisplaybass.otf)format("opentype");
-}
+@font-face {
+          font-family: "volca display bass";
+          src: url(volcadisplaybass.otf) format("opentype");
+          }
+          @font-face {
+          font-family: "volca display drum";
+          src: url(volcadisplaydrum.otf) format("opentype");
+          }
 
-@font-face{
-font-family:"volcadisplaydrum";
-src:url(volcadisplaydrum.otf)format("opentype");
-}
+          body {
+          font-family: alternate-gothic-atf, sans-serif;
+          font-weight: 300;
+          font-style: normal;
+          }
 
-body{
-font-family:alternate-gothic-atf,sans-serif;
-font-weight:300;
-font-style:normal;
-}
+          main {
+          margin-top:30px;
+          margin-bottom:30px;
+ max-width:900px;
+     background: #ddd;
+     position: absolute;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, 0%);
 
-main{
-margin-top:30px;
-margin-bottom:30px;
-max-width:900px;
-background:#ddd;
-position:absolute;
-left:50%;
-margin-right:-50%;
-transform:translate(-50%,0%);
-}
+          }
 
-.ledlit{
-height:10px;
-width:10px;
-background-color:red;
-border-radius:50%;
-display:inline-block;
-margin-right:6px;
-box-shadow:0px0px5pxred;
-}
 
-.ledunlit{
-height:10px;
-width:10px;
-background-color:#333;
-border-radius:50%;
-display:inline-block;
-margin-right:6px;
-}
+          h1 {
+          font-family: interstate,sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 200%;
+          }
 
-.lit{
-}
 
-.unlit{
-}
+          table, th, td {
+          empty-cells: show;
+          vertical-align: baseline;
+          padding:10px;
+          }
 
-x
-.row{
-text-align:left;
-color:maroon;
-}
+          .display {
+          width: 20%;
+          }
 
-.step{
-}
+           .displaymost, .displayfm, .displaydrum {
+           background:#222;
+           border-left: 2px solid white;
+           padding:20px;
+           }
 
-.step{
-text-align:left;
-width:15%;
-}
+ 		.displaymost{
+ 		font-size:170%;
+ 		}
 
-.stepbutton{
-text-transform:uppercase;
-font-weight:600;
-}
+          .displaymost, .displayfm {
+          font-family: "volca display bass", Arial;
+ 	text-shadow: 0px 0px 2px red;
+            color:red;
 
-h1{
-font-family:interstate,sans-serif;
-font-weight:700;
-font-style:normal;
-font-size:200%;
-}
+          }
 
-h1{
-margin:5%;
-margin-bottom:40px;
-}
+          .displayfm, .displaydrum {
+                   		font-size:120%;
+ }
 
-li{
-list-style-type:circle;
-}
+          .displaydrum {
+          font-family: "volca display drum", Arial;
+          color:orange;
+  text-shadow: 0px 0px 3px orange;
 
-p,li{
-margin-left:5%;
-line-height:180%;
-font-size:120%;
-}
+          }
 
-table,th,td{
-empty-cells:show;
-vertical-align:baseline;
-padding:10px;
-}
+       .drumsetting {
+         font-feature-settings: "ss01" 1;
+ 		 float:right;
+ 		 margin-left: 8px;
+          }
 
-table{
-margin-top:5%;
-}
+          .row {
+          text-align:left;
+          color:maroon;
+          }
 
-th{
-font-size:120%;
-letter-spacing:1px;
-}
+          .unlit {
 
-tr,.thdisplay{
-border-bottom:2pxsolidwhite;
-}
+          }
 
-.empty{
-border-bottom:1px;
-}
+          .lit {
+          }
 
-.default::after{
-content:"Default";
-font-weight:bold;
-font-size:80%;
-text-transform:uppercase;
-}
 
-.display{
-width:20%;
-}
 
-.displaydrum{
-font-family:"volcadisplaydrum",Arial;
-color:orange;
-text-shadow:0px0px3pxorange;
-}
+          .ledunlit {
+   height: 10px;
+   width: 10px;
+   background-color: #333;
+   border-radius: 50%;
+   display: inline-block;
+   margin-right: 6px;
+ }
 
-.displayfm,.displaydrum{
-font-size:120%;
-}
 
-.displaymost,.displayfm,.displaydrum{
-background:#222;
-border-left:2pxsolidwhite;
-padding:20px;
-}
+              .ledlit {
+   height: 10px;
+   width: 10px;
+   background-color: red;
+   border-radius: 50%;
+   display: inline-block;
+   margin-right: 6px;
+   box-shadow: 0px 0px 5px red;
+ }
 
-.displaymost,.displayfm{
-font-family:"volcadisplaybass",Arial;
-text-shadow:0px0px2pxred;
-color:red;
-}
+          .step {
+          text-align:left;
+ width:15%;
+          }
 
-.displaymost{
-font-size:170%;
-}
+          .stepbutton {
+          text-transform: uppercase;
+          font-weight:600;
+          }
 
-.drumsetting{
-font-feature-settings:"ss01"1;
-float:right;
-margin-left:8px;
-}
+
+
+          .step {
+
+          }
+
+          tr, .thdisplay {
+                   border-bottom: 2px solid white;
+
+          }
+
+          .empty {
+          border-bottom: 1px;
+          }
+
+
+   p, li {
+   margin-left:5%;
+   line-height:180%;
+   font-size:120%;
+   }
+
+   th {
+   font-size:120%;
+   letter-spacing:1px;
+   }
+
+   h1 {
+   margin:5%;
+   margin-bottom:40px;
+   }
+
+
+
+ li {
+ list-style-type:circle;
+ } 
+
+ table {
+ margin-top:5%;
+ } 
+
+ .default::after {
+ content: "Default";
+ font-weight: bold;
+ font-size:80%;
+ text-transform:uppercase;
+ }
